@@ -65,9 +65,8 @@ ul {
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -76,6 +75,8 @@ ul {
   color: #000000;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -110,14 +111,16 @@ ul {
 .portfolio-header {
   border-bottom: 1px solid #ececec;
 }
-.header-contacts-link,
-.footer-contacts-link {
+.header-contacts-link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contacts-link:hover,
@@ -131,6 +134,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-colour);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -177,9 +183,8 @@ ul {
   color: #ffffff;
   background-color: var(--blue-color);
   cursor: pointer;
-  /* border-radius: 4px; */
   padding: 10px 32px;
-  position: inherit;
+  border: 0px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -195,11 +200,10 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: F5F4FA;
+  border: 0px;
+  /* color: #212121; */
+  /* background-color: F5F4FA; */
   cursor: pointer;
-  border: 1px;
-  border-radius: 4px;
   padding: 6px 22px;
 }
 
@@ -242,8 +246,7 @@ ul {
 /* -------------work------------- */
 
 .work-section {
-  /* padding-top: 46px; */
-  padding-bottom: 47px;
+  padding-bottom: 94px;
 }
 .work-title {
   font-weight: bold;
@@ -296,13 +299,16 @@ ul {
 .team-item:first-child {
   padding-left: -15px;
 }
+.team-text {
+  padding: 30px 32px;
+}
 
 .team-name {
+  font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
   color: var(--secondary-title-colour);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team-profession {
   font-weight: normal;
@@ -310,22 +316,19 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 /*-------------- PRODUCTS -------------*/
 
 .products-list {
   width: 611px;
+  justify-content: space-between;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 34px; */
-  justify-content: space-between;
-
-  display: flex;
-}
-.products-item {
   margin-bottom: 50px;
 }
+
 .current-portfolio {
   color: #ffffff;
   background-color: var(--blue-color);
@@ -344,7 +347,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-colour);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   border: 0px;
 }
 .gallary-text {
@@ -365,34 +368,25 @@ ul {
   margin-right: -30px;
   margin-bottom: -30px;
 }
-/* .gallary-list > .gallary-item:nth-child(3n + 3) {
-  margin-right: 0px;
-} */
+
 .gallary-item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-/* .gallary-item:first-child {
-  margin-left: 30px;
-} */
-/* .gallary-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px; */
-
-/* .gallary-list:nth-child(n + 3) {
-  margin-left: -30px;
-} */
 
 .img-gallary {
   display: block;
   width: 370px;
 }
-/* padding-bottom: 20px; */
 
 /* -------FOOTER-------- */
 .footer {
   background-color: #2f303a;
   display: flex;
   flex-direction: column;
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -403,12 +397,9 @@ ul {
   line-height: 1.19;
   color: #ffffff;
   letter-spacing: 0.03em;
-  /* margin-top: 60px; */
   margin-bottom: 20px;
+  display: block;
 }
-/* .footer-contacts-item {
-  margin-bottom: 60px;
-} */
 
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 10px;
@@ -417,6 +408,18 @@ ul {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: #2196f3;
+}
+
+.footer-contacts-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  /* display: block; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 .footer-address-link {
   font-style: normal;
@@ -428,7 +431,7 @@ ul {
 }
 .footer-address-item {
   margin-bottom: 10px;
-  width: 1200px;
+  /* width: 1200px; */
 }
 
 .footer-address-link:hover,
