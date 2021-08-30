@@ -351,8 +351,10 @@ ul {
   border: 0px;
 }
 .gallary-text {
-  padding: 20px 19px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .gallary-item-text {
   font-weight: normal;
@@ -364,7 +366,6 @@ ul {
 .gallary-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-60px) / 3);
   margin-right: -30px;
   margin-bottom: -30px;
 }
@@ -372,6 +373,7 @@ ul {
 .gallary-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 -30px);
 }
 
 .img-gallary {
@@ -384,12 +386,10 @@ ul {
   background-color: #2f303a;
   display: flex;
   flex-direction: column;
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
